@@ -1,4 +1,3 @@
-cat << 'EOF' > PAIRING.md
 # Informe de Trabajo en Pareja (PAIRING)
 
 ## Decisiones de diseño
@@ -12,4 +11,3 @@ cat << 'EOF' > PAIRING.md
 * **C (Imperativo):** Tuvimos un despiste intentando calcular la desviación típica en el mismo bucle que la media, pero necesitábamos tener la media total antes de calcular las diferencias cuadráticas. Lo solucionamos dividiendo el proceso en dos pasadas con bucles `for` independientes.
 * **Haskell (Funcional):** Tuvimos varios errores de tipos (`Type mismatch`) al intentar usar la función `sqrt` y dividir entre la longitud de la lista, porque `length` devuelve un `Int`. Lo resolvimos aplicando `fromIntegral` a la longitud para convertirla a `Double`.
 * **Prolog (Lógico):** Tuvimos problemas con la evaluación de las operaciones matemáticas, ya que Prolog interpretaba las sumas como términos simbólicos en lugar de evaluar el valor. Lo solucionamos asegurando el uso del operador `is` en la recursión.
-EOF
