@@ -9,7 +9,6 @@ cat << 'EOF' > PAIRING.md
 
 ## Dificultades encontradas
 
-* **C (Imperativo):** Tuvimos un despiste intentando calcular la desviación típica en el mismo bucle que la media, pero necesitábamos tener la media total antes de calcular las diferencias cuadráticas. Lo solucionamos dividiendo el proceso en dos pasadas con bucles `for` independientes.
-* **Haskell (Funcional):** Tuvimos varios errores de tipos (`Type mismatch`) al intentar usar la función `sqrt` y dividir entre la longitud de la lista, porque `length` devuelve un `Int`. Lo resolvimos aplicando `fromIntegral` a la longitud para convertirla a `Double`.
-* **Prolog (Lógico):** Tuvimos problemas con la evaluación de las operaciones matemáticas, ya que Prolog interpretaba las sumas como términos simbólicos en lugar de evaluar el valor. Lo solucionamos asegurando el uso del operador `is` en la recursión.
-EOF
+* **Formulación de prompts para Copilot:** Me ha resultado difícil redactar los comentarios adecuados paso a paso para que Copilot entendiera el contexto y autocompletara el código completo de forma correcta sin introducir errores de sintaxis.
+
+* **Comandos de ejecución y entorno:** Al principio me costó dar con los comandos exactos de la terminal para compilar y ejecutar cada lenguaje (gcc con -lm, runhaskell y swipl). 
